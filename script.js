@@ -17,12 +17,12 @@ const del = document.getElementById("del")
 const decimal = document.getElementById('decimal')
 const input = document.getElementById('input')
 const clear = document.getElementById('clear')
-let num1, num2, add, sub, mul, divide;
+let num1=0, num2=0, add=0, sub=0, mul=0, divide=0;
 const numbers= [zero, one, two, three, four, five, six, seven, eight, nine];
 function addchar(char){
     input.value +=char;
 }
-
+input.value=''
 numbers.forEach((button, index) => {
     button.addEventListener('click', ()=>addchar(index))
 });
