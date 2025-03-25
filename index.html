@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      </style>
+  </head>
+  <body class="m-0 auto">
+    <div class="flex justify-around items-center flex-col border-b  rounded-md w-screen bg-zinc-900 h-screen text-white" >
+      <h1 class="text-2xl font-bold">Welcome to Calculator</h1>
+      <div class="border border-red-500 bg-zinc-700 rounded-lg min-w-90 h-[70%] p-5 flex flex-col justify-between">
+        <div class="input h-1/5 flex justify-between ">
+          <input id="input" class="bg-white text-black border p-2 text-3xl text-right rounded-md  w-[75%]  h-[100%]" type="text" placeholder="0" />
+          <button id="clear">clear</button>
+        </div>
+
+        <div class="rows flex justify-between  text-2xl font-bold items-center  h-1/6 ">
+          <button id="seven">7</button>
+          <button id="eight">8</button>
+          <button id="nine">9</button>
+          <button id="addition">+</button>
+        </div>
+
+        <div class="rows flex justify-between text-2xl font-bold items-center  h-1/6 ">
+          <button id="four">4</button>
+          <button id="five">5</button>
+          <button id="six">6</button>
+          <button id="division">/</button>
+        </div>
+
+        <div class="rows flex justify-between text-2xl font-bold items-center  h-1/6 ">
+          <button id="one">1</button>
+          <button id="two">2</button>
+          <button id="three">3</button>
+          <button id="multiply">*</button>
+        </div>
+
+        <div class="rows flex justify-between text-2xl font-bold items-center  h-1/6 ">
+          <button id="zero">0</button>
+          <button id="decimal">.</button>
+          <button id="del">del</button>
+          <button id="equal">=</button>
+          <button id="minus">-</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

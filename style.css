@@ -1,0 +1,15 @@
+button{
+    width: 20%;
+    border: 1px solid;
+    border-radius: 10%;
+    height: 100%;
+}
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    transform: scale(1.01);
+}
+#zero, #decimal, #del, #equal, #minus{
+    width: 18%;
+}
